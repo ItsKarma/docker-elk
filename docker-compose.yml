@@ -4,6 +4,7 @@ elasticsearch:
     - /data/elasticsearch/data:/usr/share/elasticsearch/data
   ports:
     - "9200:9200"
+    - "9300:9300"
 logstash:
   image: logstash
   command: /opt/logstash/bin/logstash -f /etc/logstash/conf.d/logstash.conf
